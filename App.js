@@ -9,18 +9,19 @@ import {
   Scene,
 } from 'react-native-router-flux';
 
-import HomeScene from './src/HomeScene';
-import AboutScene from './src/AboutScene';
+import HomeScene from './src/scenes/HomeScene';
+import AboutScene from './src/scenes/AboutScene';
 
 class App extends React.Component {
   render() {
     return (
       <Router>
-        <Scene key={'home'} title={'Mon Airbnb'} component={HomeScene} />
+        <Scene key={'home'} title={'Mon AirBnB'} component={HomeScene} />
         <Scene key={'about'} title={'About'} component={AboutScene} />
       </Router>
     );
   }
 }
+
 
 export default App;
