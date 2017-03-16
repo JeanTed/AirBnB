@@ -6,7 +6,7 @@ import {
   ListView,
   Image,
   Button,
-  TouchableHighlight,
+  TouchableHighlight
 } from 'react-native';
 import {
   Actions,
@@ -101,10 +101,11 @@ render() {
                 <View style={{
                       flex: 1,
                       alignItems: 'flex-end',
+                      marginRight: 30,
                     }}>
                   <Image
                     source={{uri: rowData.user.account.photos[0]}}
-                    style={{width: 70, height: 70, borderRadius: 35,
+                    style={{width: 50, height: 50, borderRadius: 25,
                     }} />
                 </View>
               </View>
