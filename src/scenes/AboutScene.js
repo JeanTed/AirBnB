@@ -76,7 +76,7 @@ class AboutScene extends React.Component {
               </View>
             </View>
 
-            <TouchableHighlight onPress={() => Actions.profil({rowData})}>
+            <TouchableHighlight onPress={() => Actions.profil({_id})}>
               <View style={{
                     flex: 1,
                     alignItems: 'flex-end',

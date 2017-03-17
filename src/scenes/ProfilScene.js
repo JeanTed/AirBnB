@@ -50,7 +50,13 @@ class ProfilScene extends React.Component {
 
 
   render() {
-    console.log(this.props.rowData);
+    console.log(this.props._id);
+    if (this.state.dataSource.getRowCount() === 0) {
+      return (
+        <p>Chargement...</p>
+      );
+    }
+
     return (
         <View>
           <ScrollView>

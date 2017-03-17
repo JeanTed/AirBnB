@@ -37,7 +37,7 @@ constructor(props) {
   }
 }
 
-
+// ajouter "async" devant le componentDidMount
 componentDidMount(){
   fetch(`http://localhost:3001/api/room?city=paris`)
   .then(res => res.json())
@@ -49,6 +49,18 @@ componentDidMount(){
   });
 }
 
+// Api.getRooms()
+//   .then(rooms) => {
+//     this.setState({
+//       dataSource: this.state.dataSource.cloneWithRows(rooms.rooms)
+//   });
+// }
+
+// const rooms = await Api.getRooms();
+// this.setState({
+//   dataSource: this.state.dataSource.cloneWithRows(rooms.rooms)
+//   })
+// }
 
 render() {
   return (
